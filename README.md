@@ -13,6 +13,7 @@ Start Date : 2023. 01. 16
             <td align="center"><a href="https://github.com/donggeoniiii"><img src="https://avatars.githubusercontent.com/u/120314184?v=4?s=100" width="100px;" alt=""/><br /><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=donggeoniiii" widt="100px"><br /><sub><b>박동건 donggeoniiii</b></sub></a><br /></td>
             <td align="center"><a href="https://github.com/han9580"><img src="https://avatars.githubusercontent.com/u/122426065?v=4?s=100" width="100px;" alt=""/><br /><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=han9580" widt="100px"><br /><sub><b>한승현 han9580</b></sub></a><br /></td>
             <td align="center"><a href="https://github.com/SongChaee"><img src="https://avatars.githubusercontent.com/u/122426072?v=4?s=100" width="100px;" alt=""/><br /><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=SongChaee" widt="100px"><br /><sub><b>송채은 SongChaee</b></sub></a><br /></td>
+</table>
 
 ## 3. 학습방식 & 운영방식
 
