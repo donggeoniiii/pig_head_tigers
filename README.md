@@ -14,8 +14,8 @@
         <td align="center"><a href="https://github.com/hejcj"><img src="https://avatars.githubusercontent.com/u/122426168?v=4?s=100" width="100px;" alt=""/><br /><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=bambiju156" widt="100px"><br /><sub><b>이창주 hejcj</b></sub></a><br /></td>
             <td align="center"><a href="https://github.com/donggeoniiii"><img src="https://avatars.githubusercontent.com/u/120314184?v=4?s=100" width="100px;" alt=""/><br /><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=hartlane" widt="100px"><br /><sub><b>박동건 donggeoniiii</b></sub></a><br /></td>
                 <td align="center"><a href="https://github.com/SongChaee"><img src="https://avatars.githubusercontent.com/u/122426072?v=4?s=100" width="100px;" alt=""/><br /><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=razido" widt="100px"><br /><sub><b>송채은 SongChaee</b></sub></a><br /></td>
-            <td align="center"><a href="https://github.com/han9580"><img src="https://avatars.githubusercontent.com/u/122426065?v=4?s=100" width="100px;" alt=""/><br /><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=han9580" widt="100px"><br /><sub><b>한승현 han9580</b></sub></a><br /></td>
 </table>
+
 
 
 
@@ -23,8 +23,8 @@
 
 ### 일정
 
-- 주 1회 오프라인 스터디
-- 스터디 시간 : 목요일 2h
+- 주 ~~1회~~ -> 2회 오프라인 스터디
+- 스터디 시간 : ~~목요일 2h~~ 월요일 , 목요일 2h
 
 
 
@@ -45,9 +45,9 @@
 
 ### 학습 방법
 
-- 알고리즘 개념 발표
-- 3인 공통문제 각 한 문제 발표
-- 코드리뷰
+- ~~알고리즘 개념 발표~~ -> 바킹독 선생님 강의 보기
+- ~~3인 공통문제 각 한 문제 발표~~ -> 각자 어려웠던 문제 공유
+- 서로 코드리뷰
 - 알고리즘 개념 복습
 
 
@@ -81,19 +81,50 @@
 
 0. **자바입출력**
 
-1. 수학_재귀
-2. 자료구조
-3. 정렬
-4. DP기초
-5. 그래프(DFS_BFS)
-6. 최단경로
-7. 이분탐색
-8. 분할정복
-9. 그리디
-10. 완전탐색 , 시뮬레이션, 구현
-11. 문자열
-12. 투 포인터, 슬라이딩 윈도우
-13. 백트랙킹
+1. **수학_재귀**
+2. 바킹독 선생님 따라가기
+   1. 배열
+   2. 연결 리스트
+   3. 스택
+   4. 큐
+   5. 덱
+   6. 스택의 활용(수식의 괄호 쌍)
+   7. BFS
+   8. DFS
+   9. 재귀
+   10. 백트래킹
+   11. 시뮬레이션
+   12. 정렬1
+   13. 정렬2
+   14. DP
+   15. 그리디
+   16. 수학
+   17. 이분탐색
+   18. 투포인터
+   19. 해시
+   20. 이진 검색 트리
+   21. 우선순위 큐
+   22. 그래프
+   23. 트리
+   24. 위상 정렬
+   25. 최소 신장 트리
+   26. 플로이드 알고리즘
+   27. 다익스트라 알고리즘
+   28. KMP
+   29. 트라이
+
+3. ~~자료구조~~
+4. ~~정렬~~
+5. ~~DP기초~~
+6. ~~그래프(DFS_BFS)~~
+7. ~~최단경로~~
+8. ~~이분탐색~~
+9. ~~분할정복~~
+10. ~~그리디~~
+11. ~~완전탐색 , 시뮬레이션, 구현~~
+12. ~~문자열~~
+13. ~~투 포인터, 슬라이딩 윈도우~~
+14. ~~백트랙킹~~
 
 
 
@@ -104,7 +135,7 @@
 
 
 
-## 6. 1월
+## 6. 기록
 
 - **1월 19일 목요일 오후 6시**
   - 자바 입출력 발표 => 창주
@@ -115,13 +146,22 @@
   - BOJ_1463번 1로 만들기
   - BOJ_10844 쉬운 계단 수
   - 차주 알고리즘 개념 (수학 / 재귀 / 시간복잡도)
-
 - **2월 2일 목요일 오후 7시**
   - 기초 수학 => 창주
   - 재귀 => 채은
   - 시간복잡도 => 동건
   - 기초 수학 -> BOJ_11653 / BOJ_2960 / BOJ_9020 / BOJ_22943
   - 재귀 -> BOJ_25501 / BOJ_4779 / BOJ_1074 / BOJ_2447
+  - 바킹독 선생님 루트 따라가기
+- **2월 6일 월요일 오후 7시**
+  - 배열 
+    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x04.md
+    - 추가문제 : 
+
+  - 연결리스트 
+    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x04.md
+    - 추가문제 :
+
 
 
 
@@ -130,7 +170,11 @@
 
 ### 참고용 문제 목록 및 링크
 
+- 바킹독 선생님 강의 블로그 : https://blog.encrypted.gg/
+- 바킹독 선생님 강의 자료 : https://github.com/encrypted-def/basic-algo-lecture
+- 바킹독 선생님 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook.md
 - 백준 단계별 분류 : https://www.acmicpc.net/step
+
 - 백준 알고리즘별 분류 : https://www.acmicpc.net/problem/tags
 - 스터디 커리큘럼 : https://dev-dain.tistory.com/155
 - 알고리즘 개념 정리 : https://github.com/VSFe/Algorithm_Study
