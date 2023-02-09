@@ -153,8 +153,8 @@
   - 기초 수학 -> BOJ_11653 / BOJ_2960 / BOJ_9020 / BOJ_22943
   - 재귀 -> BOJ_25501 / BOJ_4779 / BOJ_1074 / BOJ_2447
   - 바킹독 선생님 루트 따라가기
-- **2월 6일 월요일 오후 7시**
-  - 배열 
+- ~~**2월 6일 월요일 오후 7시**~~  **2월 9일 목요일 오후 7시**
+  - 배열 (선택사항)
     - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x04.md
     - 추가문제 : 
 
