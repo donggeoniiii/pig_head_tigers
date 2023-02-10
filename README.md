@@ -80,7 +80,6 @@
 ## 4. 커리큘럼
 
 0. **자바입출력**
-
 1. **수학_재귀**
 2. 바킹독 선생님 따라가기
    1. 배열
@@ -113,19 +112,6 @@
    28. KMP
    29. 트라이
 
-3. ~~자료구조~~
-4. ~~정렬~~
-5. ~~DP기초~~
-6. ~~그래프(DFS_BFS)~~
-7. ~~최단경로~~
-8. ~~이분탐색~~
-9. ~~분할정복~~
-10. ~~그리디~~
-11. ~~완전탐색 , 시뮬레이션, 구현~~
-12. ~~문자열~~
-13. ~~투 포인터, 슬라이딩 윈도우~~
-14. ~~백트랙킹~~
-
 
 
 ## 5. 목표
@@ -156,11 +142,11 @@
 - ~~**2월 6일 월요일 오후 7시**~~  **2월 9일 목요일 오후 7시**
   - 배열 (선택사항)
     - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x04.md
-    - 추가문제 : 
-
   - 연결리스트 
     - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x04.md
-    - 추가문제 :
+- **2월 13일 월요일 오후 7시**
+  - 스택
+    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x04.md
 
 
 
