@@ -82,9 +82,9 @@
 0. **자바입출력**
 1. **수학_재귀**
 2. 바킹독 선생님 따라가기
-   1. 배열
-   2. 연결 리스트
-   3. 스택
+   1. **배열**
+   2. **연결 리스트**
+   3. **스택**
    4. 큐
    5. 덱
    6. 스택의 활용(수식의 괄호 쌍)
@@ -146,7 +146,10 @@
     - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x04.md
 - **2월 13일 월요일 오후 7시**
   - 스택
-    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x04.md
+    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x05.md
+- **2월 17일 금요일 오후 7시**
+  - 큐
+    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x06.md
 
 
 
