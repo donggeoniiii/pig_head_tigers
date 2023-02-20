@@ -34,8 +34,8 @@
 - 개별 문제 각자 풀이 1h
 
 - 한 주에 한 커리큘럼
-- **개념** => 발표자가 발표 
-- 공통문제 각자 1문제  => 발표자가 문제 해석 및 코드 리뷰
+- ~~**개념** => 발표자가 발표~~ 
+- ~~공통문제 각자 1문제  => 발표자가 문제 해석 및 코드 리뷰~~
 - 일주일 5문제 풀이 (브론즈 1/ 실버 3 / 골드 1)
 - 코드 리뷰
 - 차주 알고리즘 개념, 문제 정하기
@@ -85,9 +85,9 @@
    1. **배열**
    2. **연결 리스트**
    3. **스택**
-   4. 큐
-   5. 덱
-   6. 스택의 활용(수식의 괄호 쌍)
+   4. **큐**
+   5. **덱**
+   6. **스택의 활용(수식의 괄호 쌍)**
    7. BFS
    8. DFS
    9. 재귀
@@ -141,7 +141,7 @@
   - 바킹독 선생님 루트 따라가기
 - ~~**2월 6일 월요일 오후 7시**~~  **2월 9일 목요일 오후 7시**
   - 배열 (선택사항)
-    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x04.md
+    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x03.md
   - 연결리스트 
     - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x04.md
 - **2월 13일 월요일 오후 7시**
@@ -150,9 +150,12 @@
 - **2월 17일 금요일 오후 7시**
   - 큐
     - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x06.md
+- **2월 20일 월요일 오후 7시**
+  - 덱
+    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x07.md
 
-
-
+  - 스택의 활용
+    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x08.md
 
 
 ## 7. 기타
