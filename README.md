@@ -88,7 +88,7 @@
    4. **큐**
    5. **덱**
    6. **스택의 활용(수식의 괄호 쌍)**
-   7. BFS
+   7. **BFS**
    8. DFS
    9. 재귀
    10. 백트래킹
@@ -123,39 +123,47 @@
 
 ## 6. 기록
 
-- **1월 19일 목요일 오후 6시**
+1. **1월 19일 목요일 오후 6시**
   - 자바 입출력 발표 => 창주
   - BOJ_15552번 빠른 A+B
   - BOJ_1009번 분산처리
-- **1월 26일 목요일 오후 7시**
+2. **1월 26일 목요일 오후 7시**
   - 설연휴 문제풀이 공유
   - BOJ_1463번 1로 만들기
   - BOJ_10844 쉬운 계단 수
   - 차주 알고리즘 개념 (수학 / 재귀 / 시간복잡도)
-- **2월 2일 목요일 오후 7시**
+3. **2월 2일 목요일 오후 7시**
   - 기초 수학 => 창주
   - 재귀 => 채은
   - 시간복잡도 => 동건
   - 기초 수학 -> BOJ_11653 / BOJ_2960 / BOJ_9020 / BOJ_22943
   - 재귀 -> BOJ_25501 / BOJ_4779 / BOJ_1074 / BOJ_2447
   - 바킹독 선생님 루트 따라가기
-- ~~**2월 6일 월요일 오후 7시**~~  **2월 9일 목요일 오후 7시**
+4. ~~**2월 6일 월요일 오후 7시**~~  **2월 9일 목요일 오후 7시**
   - 배열 (선택사항)
     - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x03.md
   - 연결리스트 
     - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x04.md
-- **2월 13일 월요일 오후 7시**
+5. **2월 13일 월요일 오후 7시**
   - 스택
     - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x05.md
-- **2월 17일 금요일 오후 7시**
+6. **2월 17일 금요일 오후 7시**
   - 큐
     - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x06.md
-- **2월 20일 월요일 오후 7시**
+7. **2월 20일 월요일 오후 7시**
   - 덱
     - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x07.md
 
   - 스택의 활용
     - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x08.md
+8. **2월 23일 목요일 오후 7시**
+  - BFS
+    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
+    - ~기본문제 7569 토마토 까지 
+9. **2월 27일 월요일 오후 7시**
+  - BFS
+    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
+    - ~기본문제 6593 상범 빌딩까지
 
 
 ## 7. 기타
