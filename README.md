@@ -6,7 +6,7 @@
 
 📆**Start Date : 2023. 01. 16**
 
-
+<br>
 
 ## 2. 🤠구성원
 
@@ -15,9 +15,7 @@
             <td align="center"><a href="https://github.com/donggeoniiii"><img src="https://avatars.githubusercontent.com/u/120314184?v=4?s=100" width="100px;" alt=""/><br /><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=hartlane" widt="100px"><br /><sub><b>박동건 donggeoniiii</b></sub></a><br /></td>
                 <td align="center"><a href="https://github.com/SongChaee"><img src="https://avatars.githubusercontent.com/u/122426072?v=4?s=100" width="100px;" alt=""/><br /><img src="http://mazassumnida.wtf/api/mini/generate_badge?boj=razido" widt="100px"><br /><sub><b>송채은 SongChaee</b></sub></a><br /></td>
 </table>
-
-
-
+<br>
 
 ## 3. 학습방식 & 운영방식
 
@@ -74,7 +72,7 @@
 
   - 지각과 동일 + 합쳐서 계산
 
-
+<br>
 
 
 ## 4. 커리큘럼
@@ -112,58 +110,71 @@
    28. KMP
    29. 트라이
 
-
+<br>
 
 ## 5. 목표
 
 - 코딩테스트
 - A+ 모의고사 취득
 
-
+<br>
 
 ## 6. 기록
 
-1. **1월 19일 목요일 오후 6시**
-  - 자바 입출력 발표 => 창주
-  - BOJ_15552번 빠른 A+B
-  - BOJ_1009번 분산처리
-2. **1월 26일 목요일 오후 7시**
-  - 설연휴 문제풀이 공유
-  - BOJ_1463번 1로 만들기
-  - BOJ_10844 쉬운 계단 수
-  - 차주 알고리즘 개념 (수학 / 재귀 / 시간복잡도)
-3. **2월 2일 목요일 오후 7시**
-  - 기초 수학 => 창주
-  - 재귀 => 채은
-  - 시간복잡도 => 동건
-  - 기초 수학 -> BOJ_11653 / BOJ_2960 / BOJ_9020 / BOJ_22943
-  - 재귀 -> BOJ_25501 / BOJ_4779 / BOJ_1074 / BOJ_2447
-  - 바킹독 선생님 루트 따라가기
-4. ~~**2월 6일 월요일 오후 7시**~~  **2월 9일 목요일 오후 7시**
-  - 배열 (선택사항)
-    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x03.md
-  - 연결리스트 
-    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x04.md
-5. **2월 13일 월요일 오후 7시**
-  - 스택
-    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x05.md
-6. **2월 17일 금요일 오후 7시**
-  - 큐
-    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x06.md
-7. **2월 20일 월요일 오후 7시**
-  - 덱
-    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x07.md
+1. **1월 19일 목요일 19:00~21:00**
+   - 자바 입출력 발표 => 창주
+     - BOJ_15552번 빠른 A+B
+     - BOJ_1009번 분산처리
+2. **1월 26일 목요일 19:00~21:00**
+   - 설연휴 문제풀이 공유
+     - BOJ_1463번 1로 만들기
+     - BOJ_10844 쉬운 계단 수
+     - 차주 알고리즘 개념 (수학 / 재귀 / 시간복잡도)
+3. **2월 2일 목요일 19:00~21:00**
+   - 기초 수학 => 창주
+     - 재귀 => 채은
+     - 시간복잡도 => 동건
+     - 기초 수학 -> BOJ_11653 / BOJ_2960 / BOJ_9020 / BOJ_22943
+     - 재귀 -> BOJ_25501 / BOJ_4779 / BOJ_1074 / BOJ_2447
+     - 바킹독 선생님 루트 따라가기
+4. ~~**2월 6일 월요일 오후 7시**~~  **2월 9일 목요일 19:00~21:00**
+     - 배열 (선택사항)
+       - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x03.md
+     - 연결리스트 
+       - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x04.md
+5. **2월 13일 월요일 19:00~21:00**
+     - 스택
+       - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x05.md
+6. **2월 17일 금요일 19:00~21:00**
+     - 큐
+       - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x06.md
+7. **2월 20일 월요일 19:00~21:00**
+   - 덱
+     - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x07.md
+     - 스택의 활용
+       - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x08.md
+8. **2월 23일 목요일 19:00~21:00**
+   - BFS
+     - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
+     - ~기본문제 7569 토마토 까지 
+9. **2월 27일 월요일 19:00~21:00**
+   - BFS
+     - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
+     - ~기본문제 6593 상범 빌딩까지
+10. **3월 02일 목요일 19:00~21:00**
+    - BFS
+      - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
+      - ~응용문제 2573 상범 빌딩까지
+11. **3월 09일 목요일 19:00~21:00**
+    - BFS
+      - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
+      - ~응용문제 1600 말이 되고픈 원숭이까지
+12. **3월 16일 목요일 19:00~21:00**
+    - 재귀
+      - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0B.md
+      - ~기본문제 2630 색종이 만들기 까지
 
-  - 스택의 활용
-    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x08.md
-8. **2월 23일 목요일 오후 7시**
-  - BFS
-    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
-    - ~기본문제 7569 토마토 까지 
-9. **2월 27일 월요일 오후 7시**
-  - BFS
-    - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
-    - ~기본문제 6593 상범 빌딩까지
+<br>
 
 
 ## 7. 기타
@@ -180,3 +191,5 @@
 - 알고리즘 개념 정리 : https://github.com/VSFe/Algorithm_Study
 - 알고리즘 자료 및 문제 : https://github.com/dev-dain/Dukgorithm
 - 알고리즘 자료 및 문제2 : https://github.com/tony9402/baekjoon
+
+<br>
