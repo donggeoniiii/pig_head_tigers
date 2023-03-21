@@ -87,8 +87,8 @@
    5. **덱**
    6. **스택의 활용(수식의 괄호 쌍)**
    7. **BFS**
-   8. DFS
-   9. 재귀
+   8. **DFS**
+   9. **재귀**
    10. 백트래킹
    11. 시뮬레이션
    12. 정렬1
@@ -156,23 +156,37 @@
 8. **2월 23일 목요일 19:00~21:00**
    - BFS
      - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
-     - ~기본문제 7569 토마토 까지 
+     - ~ 기본 문제 7569 토마토 까지 
 9. **2월 27일 월요일 19:00~21:00**
    - BFS
      - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
-     - ~기본문제 6593 상범 빌딩까지
+     - ~ 기본 문제 6593 상범 빌딩까지
 10. **3월 02일 목요일 19:00~21:00**
-    - BFS
-      - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
-      - ~응용문제 2573 상범 빌딩까지
+     - BFS
+       - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
+       - ~ 응용 문제 2573 상범 빌딩까지
 11. **3월 09일 목요일 19:00~21:00**
-    - BFS
-      - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
-      - ~응용문제 1600 말이 되고픈 원숭이까지
+      - BFS
+        - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
+        - ~ 응용 문제 1600 말이 되고픈 원숭이까지
 12. **3월 16일 목요일 19:00~21:00**
-    - 재귀
-      - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0B.md
-      - ~기본문제 2630 색종이 만들기 까지
+      - 재귀
+        - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0B.md
+        - ~ 기본 문제 2630 색종이 만들기 까지
+13. **3월 21일 화요일 19:00~21:00**
+      - 재귀
+           - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0B.md
+           - ~ 응용 문제 2448 별찍기 - 11 까지 
+
+      - 백트래킹
+           - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0C.md
+           - ~ 기본 문제 15650 N과 M (2)
+
+14. **3월 28일 화요일 19:00~21:00**
+      - 백트래킹
+           - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0C.md
+           - ~ 기본 문제 15663 N과 M (9)
+
 
 <br>
 
