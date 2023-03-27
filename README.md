@@ -162,30 +162,34 @@
      - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
      - ~ 기본 문제 6593 상범 빌딩까지
 10. **3월 02일 목요일 19:00~21:00**
-     - BFS
-       - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
-       - ~ 응용 문제 2573 상범 빌딩까지
-11. **3월 09일 목요일 19:00~21:00**
       - BFS
         - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
-        - ~ 응용 문제 1600 말이 되고픈 원숭이까지
+        - ~ 응용 문제 2573 상범 빌딩까지
+11. **3월 09일 목요일 19:00~21:00**
+        - BFS
+          - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x09.md
+          - ~ 응용 문제 1600 말이 되고픈 원숭이까지
 12. **3월 16일 목요일 19:00~21:00**
-      - 재귀
-        - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0B.md
-        - ~ 기본 문제 2630 색종이 만들기 까지
+        - 재귀
+          - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0B.md
+          - ~ 기본 문제 2630 색종이 만들기 까지
 13. **3월 21일 화요일 19:00~21:00**
-      - 재귀
-           - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0B.md
-           - ~ 응용 문제 2448 별찍기 - 11 까지 
+        - 재귀
+             - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0B.md
+             - ~ 응용 문제 2448 별찍기 - 11 까지 
 
-      - 백트래킹
-           - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0C.md
-           - ~ 기본 문제 15650 N과 M (2)
+        - 백트래킹
+             - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0C.md
+             - ~ 기본 문제 15650 N과 M (2)
 
 14. **3월 28일 화요일 19:00~21:00**
-      - 백트래킹
-           - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0C.md
-           - ~ 기본 문제 15663 N과 M (9)
+        - 백트래킹
+             - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0C.md
+             - ~ 기본 문제 15663 N과 M (9)
+15. **4월 4일 화요일 19:00~21:00**
+        - 백트래킹
+          - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0C.md
+          - ~ 응용 문제 16987 계란으로 계란치기
 
 
 <br>
