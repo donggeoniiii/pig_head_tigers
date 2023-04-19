@@ -1,212 +1,191 @@
-package boj;
-
-// 스티커 붙이기
+//색종이 
 
 import java.util.Arrays;
-import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
-
-public class BOJ18808_스티커붙이기 {
+public class Main {
 	
-	// 배열의 크기
-	static int N, M;
+	// 색종이 남은 개수의 배열
+	private static int[] papers;
 	
-	// 붙일 스티커의 개수
-	static int T;
+	// 사용한 색종이 개수의 최솟값
+	private static int minCnt;
 	
-	// 노트북
-	static int[][] laptop;
-	
-	// 스티커별로 맞는 위치 찾기 메소드
-	static void stick(int[][] curSticker) {
+	// 덮을 종이 선택하는 메소드
+	static void choosePaper(int cr, int cc, int cnt, boolean[][] curMap) {
 		
-		// 스티커 길이 받아오기
-		int R = curSticker.length;
-		int C = curSticker[0].length;
+		// pruning: 이미 사용한 종이의 개수가 최소값보다 높으면 그만
+		if (cnt > minCnt) return;
 		
-		int idx = 0;
-	
-		// 붙일 수 있는지 확인하는 변수
-		boolean terminated = false;
-
-		// 회전한 스티커 모양, 추가할 위치 담는 변수
-		int[][] newSticker = curSticker;
-		int cr = -1;
-		int cc = -1;
-
-		// 시작점이 될 수 있는 범위내에서, 찾기 전까지 탐색
-		while (!terminated || idx < (N-R+1)*(M-C+1)){
+		// base case: 마지막 탐색에 도달하면
+		if (cr == 10) {
 			
-			// index 갱신
-			cr = idx % (M-C+1);
-			cc = idx / (M-C+1);
+			// 만약 남은 경우가 있으면 failed 표시
+			boolean failed = false;
+			for (int r = 0; r < 10; r++) {
+				for (int c = 0; c < 10; c++) {
+					if (curMap[r][c] == true) {
+						failed = true;
+						break;
+					}
+				}
+				if (failed == true) break;
+			}
 			
-			// 돌려가면서 확인
-			for (int degree = 0; degree < 4; degree++) {
-				
-				// 스티커 돌리기
-				newSticker = flip(curSticker, degree);
-				
-				// 스티커가 index를 벗어나면 스킵
-				if (cr + newSticker.length >= N || cc + newSticker[0].length >= M)
-					continue;
-				
-				// 붙일 수 없으면 스킵, 붙일 수 있으면 종료조건 켜기
-				if (!match(cr, cc, laptop, newSticker))
-					continue;
-				else 
-					terminated = true;
-			}			
+			// 최솟값 갱신
+			if (!failed) minCnt = Math.min(minCnt, cnt);
 			
-			// index 이동
-			idx++;
+			return;
 		}
 		
-		// 시작위치가 갱신됐다면 붙일 곳이 있는 것이므로 스티커 붙이기
-		if (cr != -1) {
+		// recursive case
+		
+		// 이동시킬 좌표
+		int nr = cr;
+		int nc = cc;
+		
+		// 좌표가 false일 동안
+		while (nr < 10 && nc < 10 && curMap[nr][nc] == false) {
+			// 앞으로 전진
+			nc++;
 			
-			for (int r = cr; r < cr + newSticker.length; r++) {
-				for (int c = cc; c < cc + newSticker[0].length; c++) {
-					laptop[r][c] = newSticker[r][c]; 
+			// 끝까지 온 경우 줄바꿈
+			if (nc == 10) {
+				nr++;
+				nc = 0;
+			}	
+		}
+		
+		// r = 10이면 모든 좌표를 탐색한 것이므로 종료
+		if (nr == 10) {
+			minCnt = Math.min(minCnt, cnt);
+			return;
+		}
+		
+		// 좌표가 1이면 색종이 고르기
+		if (curMap[nr][nc] == true) {
+
+			// 큰게 덮는게 빨리 끝나니까 큰 거부터
+			for (int size = 5; size >= 1; size--) {
+				
+				// 현재 좌표에서 해당 색종이를 덮으면 범위를 벗어나는 경우 스킵
+				if (nr+size > 10 || nc+size > 10) continue;
+				
+				// 해당 색종이가 다 떨어졌으면 스킵
+				if (papers[size] == 0) continue;
+				
+				// 해당 색종이 선택
+				papers[size]--;
+				
+				// 맵 복사
+				boolean[][] newMap = new boolean[10][10];
+				for (int rdx = 0; rdx < 10; rdx++) {
+					newMap[rdx] = Arrays.copyOf(curMap[rdx], 10); 
+				}
+				
+				// 색종이 붙이기 메소드를 시행해서 성공했으면 재귀 호출
+				if (paste(nr, nc, size, newMap)) 
+					// 줄바꿈이 필요한 경우 좌표 바꿔서 재귀 호출
+					if (nc+size == 10) choosePaper(nr+1, 0, cnt+1, newMap);
+					else choosePaper(nr, nc+size, cnt+1, newMap);
+				
+				// 다른 선택을 위해 선택 되돌리기
+				papers[size]++;
+				
+			}
+		}
+	}
+	
+	
+	// 색종이 붙이기 메소드
+	private static boolean paste(int cr, int cc, int range, boolean[][] map) {
+		
+		// 색종이로 칠할 부분을 저장하는 queue
+		Queue<Integer> queue = new LinkedList<>();
+		
+		// 크기만큼 색종이 붙이기
+		for (int r = cr; r < cr + range; r++) {
+			for (int c = cc; c < cc + range; c++) {
+				
+				// 만약 false인 값이 있으면 큐 비우고 false 반환 
+				if (map[r][c] == false) {
+					queue.clear();
+					return false;
+				}
+				
+				// 1인 값은 queue에 넣기
+				else { // if (map[r][c] == true)
+					queue.offer(r);
+					queue.offer(c);
 				}
 			}
 		}
 		
-	}
-	
-	// 대보기 메소드
-	static boolean match(int cr, int cc, int[][] map, int[][] sticker) {
-		
-		// 해당 좌표부터 스티커 붙이기 시뮬 on
-		for (int r = cr; r < cr + sticker.length; r++) {
-			for (int c = cc; c < cc + sticker[0].length; c++) {
-				
-				// 만약 스티커 붙여야 되는 자린데 이미 자리에 뭐가 붙어있으면 false 반환
-				if (sticker[r][c] == 1 && map[r][c] == 1) 
-					return false;
-			}
+		// false인 부분 없이 다 true면 queue에서 좌표 빼면서 false로 바꾸기
+		while (!queue.isEmpty()) {
+			
+			int nr = queue.poll();
+			int nc = queue.poll();
+			
+			map[nr][nc] = false;
 		}
 		
+		// true 반환
 		return true;
 	}
 	
-	// 배열 돌리기 메소드
-	static int[][] flip(int[][] curMap, int degree){
-		
-		int[][] newMap;
-		
-		// 돌리는 각도에 따라 맵 전환
-		switch (degree) {
-		case 1:
-			// 90도 돌리기(오른쪽)
-			
-			// 일단 배열 만들고
-			newMap = new int[M][N];
-			
-			// 값은 열부터, 거꾸로 넣기
-			for (int c = N-1; c >= 0; c--) {
-				for (int r = 0; r < M; r++) {
-					newMap[r][c] = curMap[(N-1)-c][r];
-				} 
-			}
-			
-			break;
-		case 2:
-			// 180도 돌리기
-
-			// 일단 배열 만들고
-			newMap = new int[N][M];
-			
-			// 값은 행부터, 거꾸로 넣기
-			for (int r = N-1; r >= 0; r--) {
-				for (int c = M-1; c >= 0; c--) {
-					newMap[r][c] = curMap[(N-1)-r][(M-1)-c];
-				}
-			}
-			
-			break;
-		case 3:
-			// 270도 돌리기(왼쪽)
-
-			// 일단 배열 만들고
-			newMap = new int[M][N];
-			
-			// 값은 열순으로 넣기
-			for (int c = 0; c < N; c++) {
-				for (int r = M-1; r >= 0; r--) {
-					newMap[r][c] = curMap[c][(M-1)-r];
-				}
-			}
-			
-			break;
-		default:
-			// 안 돌리기
-			newMap = new int[curMap.length][curMap[0].length];
-			for (int r = 0; r < curMap.length; r++) {
-				newMap[r] = Arrays.copyOf(curMap[r], curMap[0].length);
-			}
-			
-			break;
-		}
-		return newMap;
-	}
 	
 	
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
+		StringBuilder sb = new StringBuilder();
 		
-		// 노트북 크기
-		N = input.nextInt();
-		M = input.nextInt();
-		laptop = new int[N][M];
-
-		// 스티커 개수
-		T = input.nextInt();
+		// 배열 생성
+		papers = new int[6];
+		Arrays.fill(papers, 5);
+		boolean[][] map = new boolean[10][10];
 		
-		// 스티커 정보 저장할 arrayList(스티커의 크기가 서로 다르면 한 배열에 저장 어려움)
-		ArrayList<int[][]> stickers = new ArrayList<>();
+		// 배열에 값 입력
+		for (int r = 0; r < 10; r++) {
+			for (int c = 0; c < 10; c++) {
+				int num = input.nextInt();
+				
+				// 입력이 0이면 false, 1이면 true
+				if (num == 0) map[r][c] = false;
+				else map[r][c] = true;
+			}
+		}
 		
-		// 스티커 정보 입력받고 저장
-		for (int st = 0; st < T; st++) {
-			
-			// 스티커별 세로 가로 크기
-			int sr = input.nextInt();
-			int sc = input.nextInt();
-			int[][] newSticker = new int[sr][sc];
-			
-			// 스티커 정보 입력
-			for (int r = 0; r < sr; r++) {
-				for (int c = 0; c < sc; c++) {
-					newSticker[r][c] = input.nextInt();
+		// 최솟값 초기화
+		minCnt = 26;
+		
+		// 처음으로 나온 1 위치 저장
+		int sr = -1;
+		int sc = -1;
+		for (int r = 0; r < 10; r++) {
+			for (int c = 0; c < 10; c++) {
+				if (map[r][c] == true) {
+					sr = r;
+					sc = c;
+					break;
 				}
 			}
-			
-			// list에 추가
-			stickers.add(newSticker);
+			if (sr != -1) break;
 		}
 		
+		// 1값이 없으면 탐색할 필요가 없으므로 정답 = -1
+		if (sr == -1) minCnt = 0;
+		// 있으면 해당 위치부터 탐색 시작
+		else choosePaper(sr, sc, 0, map);
 		
-		// 차례대로 붙이기
-		for (int st = 0; st < T; st++) {
-			
-			// 스티커 정보 받아오기
-			int[][] curSticker = stickers.get(st);
-			
-			// 붙일곳 찾기
-			stick(curSticker);
-		}
+		// 초기화값 그대로면 -1로 변경
+		if (minCnt == 26) minCnt = -1;
 		
-		// 다 붙이고 나서 남는 지점 세기
-		int answer = 0;
-		for (int r = 0; r < N; r++) {
-			for (int c = 0; c < M; c++) {
-				if (laptop[r][c] == 1) answer++;
-			}
-		}
 		
 		// 정답 출력
-		System.out.println(answer);
+		System.out.println(minCnt);
 		
 		input.close();
 	}
