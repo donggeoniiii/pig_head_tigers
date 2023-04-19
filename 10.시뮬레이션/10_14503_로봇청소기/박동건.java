@@ -17,12 +17,6 @@ public class Main {
 	static int[] dr = {-1,0,1,0};
 	static int[] dc = {0,1,0,-1};
 	
-	
-	// index가 벗어나는지 확인하는 메소드
-	static boolean outOfIndex(int r, int c) {
-		return r >= N || c >= M || r < 0 || c < 0;
-	}
-	
 	// 시스템 스택을 이용한 DFS
 	static int dfs(int cr, int cc, int dir, int cnt) {
 		
@@ -52,11 +46,10 @@ public class Main {
 		// 뒤로 한칸 이동하게 확인
 		int nr = cr + dr[(dir+2) % 4];
 		int nc = cc + dc[(dir+2) % 4];
-		
-		
+
 		
 		// 뒤가 벽이 아니면 
-		if (!outOfIndex(nr,nc) && map[nr][nc] != 1) {
+		if (map[nr][nc] != 1) {
 			
 			// 이동할 수 있으므로 이동
 			return dfs(nr, nc, dir, cnt);
