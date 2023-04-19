@@ -222,6 +222,11 @@
       - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0D.md
       - ~ 기본 문제 14499 주사위 굴리기
 
+17. **4월 18일 화요일 19:00~21:00**
+    - 시뮬레이션
+      - 문제집 : https://github.com/encrypted-def/basic-algo-lecture/blob/master/workbook/0x0D.md
+      - ~ 기본 문제 14503 로봇 청소기
+
     
 ## 7. 기타
 
